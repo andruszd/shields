@@ -33,7 +33,7 @@
     "config": "^3.3.6",
     "cross-env": "^6.0.3",
     "decamelize": "^3.2.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "emojic": "^1.1.15",
     "escape-string-regexp": "^2.0.0",
     "fast-xml-parser": "^3.19.0",
