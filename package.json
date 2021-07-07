@@ -61,7 +61,7 @@
     "semver": "~6.3.0",
     "simple-icons": "1.19.0",
     "xmldom": "~0.5.0",
-    "xpath": "~0.0.27"
+    "xpath": "~0.0.32"
   },
   "scripts": {
     "coverage:test:server": "echo \"Deprecated; run `npm run coverage:test:core` instead.\" && npm run coverage:test:core",
