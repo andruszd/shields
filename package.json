@@ -42,7 +42,7 @@
     "glob": "^7.1.5",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.12.4",
-    "ioredis": "4.27.6",
+    "ioredis": "4.27.8",
     "joi-extension-semver": "4.0.0",
     "js-yaml": "^3.13.1",
     "jsonpath": "~1.1.1",
