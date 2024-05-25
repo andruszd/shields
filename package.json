@@ -39,7 +39,7 @@
     "fast-xml-parser": "^3.19.0",
     "fsos": "^1.1.6",
     "gh-badges": "file:gh-badges",
-    "glob": "^7.1.5",
+    "glob": "^9.0.0",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.12.4",
     "ioredis": "4.27.6",
