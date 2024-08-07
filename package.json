@@ -42,7 +42,7 @@
     "glob": "^7.1.5",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.12.4",
-    "ioredis": "4.27.6",
+    "ioredis": "4.27.8",
     "joi-extension-semver": "4.0.0",
     "js-yaml": "^3.13.1",
     "jsonpath": "~1.1.1",
@@ -51,7 +51,7 @@
     "lodash.times": "^4.3.2",
     "moment": "^2.29.4",
     "node-env-flag": "^0.1.0",
-    "parse-link-header": "^1.0.1",
+    "parse-link-header": "^2.0.0",
     "path-to-regexp": "^3.1.0",
     "pretty-bytes": "^5.3.0",
     "priorityqueuejs": "^1.0.0",
@@ -61,7 +61,8 @@
     "semver": "~6.3.0",
     "simple-icons": "1.19.0",
     "xmldom": "~0.5.0",
-    "xpath": "~0.0.32"
+    "xpath": "~0.0.32",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "coverage:test:server": "echo \"Deprecated; run `npm run coverage:test:core` instead.\" && npm run coverage:test:core",
@@ -116,7 +117,9 @@
     "e2e": "start-server-and-test start http://localhost:3000 test:e2e",
     "e2e-on-build": "cross-env CYPRESS_baseUrl=http://localhost:8080 start-server-and-test start:server:e2e-on-build http://localhost:8080 test:e2e",
     "badge": "cross-env NODE_CONFIG_ENV=test TRACE_SERVICES=true node scripts/badge-cli.js",
-    "build-docs": "rimraf api-docs/ && jsdoc --pedantic -c ./jsdoc.json ."
+    "build-docs": "rimraf api-docs/ && jsdoc --pedantic -c ./jsdoc.json .",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "lint-staged": {
     "**/*.js": [
@@ -289,5 +292,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "snyk": true
 }
